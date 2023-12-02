@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+  border-bottom: solid gray !important;
+}
+.navbar navbar-expand{
+  background-color: #ee140d;
+  
+}
+.nav-link {
+  font-weight: 300 !important;
+  color:rgb(10, 152, 247);
+}
+.nav-link :hover{
+  color:#FF6C37;
+}
+
+
+.logo img{
+  height: 45px;
+  width: 45px;
+}
+.navbar-brand {
+  font-weight: 700;
+  color: #0a91eb;
+  font-family: "roboto", sans-serif;
+  letter-spacing: 3px;
+}
+
+
+/* =============================
+==========footer============= */
+
+.footer {
+  color: rgb(255, 255, 255);
+  padding: 25px;
+  background-color:#313030;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.footer a:hover {
+  color:#FF6C37;
+  border-bottom: 1px solid #ffefba;
+}
+/* =================================
+======== page not found css ======= */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+  color: #313030;
+}
+
+.pnf-btn {
+  color: rgb(8, 4, 4);
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
+/* ========================================= */
+/* =========contact us ========= */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-link{
+  text-decoration: none !important;
+  color: black !important;
+}
+.collapse  a {
+  background-image: linear-gradient(
+    to right,
+    #f13312,
+    #f3610d 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.collapse a:before{
+  content: '';
+  background: #f16406;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.collapse a:hover {
+ background-position: 0;
+}
+
+.collapse a:hover::before{
+  width: 100%;
+}
